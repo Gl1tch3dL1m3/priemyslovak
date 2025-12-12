@@ -1,9 +1,8 @@
 # PRIEMYSLOVAK
-PRIEMYSLOVAK je programovací jazyk, ktorý bol vytvorený ako maturitný projekt. Jeho syntax je odvodená z jazyka BASIC. Je to takisto môj prvý projekt v C++ a prvý programovací jazyk, aký som kedy spravil.
+PRIEMYSLOVAK je programovací jazyk, ktorý bol vytvorený ako maturitný projekt. Jeho syntax je odvodená z jazyka BASIC. Je to taktiež môj prvý projekt v C++ a prvý programovací jazyk, aký som kedy spravil.
 <br><br>
-**UPOZORNENIE** ⚠️
-
-*Maximálne neodporúčam využívať tento jazyk v akomkoľvek projekte! Jazyk neobsahuje funkcie, triedy, ani základné atribúty. Rýchlosť tohto jazyka je 1000x pomalšia ako Python (pre porovnanie: Python napočíta do 1 000 000 za zlomok sekundy, PRIEMYSLOVAK za 3 minúty. Dôvodom je to, že Python je z časti aj kompilovaný, pretože celý kód sa preloží do Python bytecodu, ktorý sa následne interpretuje a nekontroluje. PRIEMYSLOVAK môže skontrolovať ten istý riadok aj 5x. Taktiež, parser nekontroluje iba syntax, ale aj datatypy. Viem, že to tak nemá byť, ale keď som si to už uvedomil, tak bolo neskoro.*
+**UPOZORNENIE** ⚠️<br>
+*Maximálne neodporúčam využívať tento jazyk v akomkoľvek projekte! Jazyk neobsahuje funkcie, triedy, ani základné atribúty. Rýchlosť tohto jazyka je 1000x pomalšia ako Python (pre porovnanie: Python napočíta do 1 000 000 za zlomok sekundy, PRIEMYSLOVAK za 3 minúty. Dôvodom je to, že Python je z časti aj kompilovaný, pretože celý kód sa preloží do Python bytecodu, ktorý sa následne interpretuje a nekontroluje. PRIEMYSLOVAK môže skontrolovať jeden riadok aj 5x, čo spôsobuje brutálne spomalenie. Taktiež, parser nekontroluje iba syntax, ale aj datatypy. Viem, že to tak nemá byť, ale keď som si to už uvedomil, tak bolo neskoro.*
 
 ## Ako používať tento jazyk?
 ### Datatypy
@@ -13,6 +12,7 @@ V jazyku PRIEMYSLOVAK sa využívajú tieto dátové typy:<br>
 - STRING
 - BOOL
 - NONETYPE
+- ARRAY
 
 ### Operácie
 Sú tu klasické matematické operácie: +, -, *, /, ^, %.
@@ -42,6 +42,26 @@ Použitie: `1 == 1` (vráti TRUE)
 Znamieko ~ (NOT) je možné použiť len na samostatnú hodnotu.<br>
 Príklad: `~8` (prevráti všetky bity čísla 8 a vráti -9)
 
+### Komentáre
+Komentáre sú riadky kódu, ktoré sú ignorované interpreterom. Môžu sa vložiť hocikde do kódu:
+```
+// Toto je komentár
+1 + 5 // Toto je tiež komentár, ale 1 + 5 už nie!
+
+/* Toto
+je
+viacriadkový
+komentár */
+
+/* Môže byť aj v jednom riadku */
+```
+
+### Escape characters
+Escape characters sú znaky v stringe, ktoré majú špeciálne funkcie. PRIEMYSLOVAK podporuje tieto znaky:<br>
+- \n (nový riadok)
+- \t (tabulátor)
+- 
+
 ### Premenné
 Premenná sa môže vytvoriť takto:<br>
 `a = 1` (do premennej a je vložená hodnota 1)
@@ -49,6 +69,8 @@ Premenná sa môže vytvoriť takto:<br>
 Premenná sa môže aktualizovať použitím úplne rovnakého spôsobu.<br>
 K hodnote premennej sa môže pristupovať ako v každom jazyku - jednoducho napíšeme názov premennej:<br>
 `9 + a` (a sa nahradí 1, potom sa vypočíta 9 + 1 = 10)
+
+### Arrays
 
 ### Keywordy
 PRIEMYSLOVAK má zadefinovaných 27 keywordov:<br>
@@ -173,7 +195,7 @@ Pozastaví chod programu na určitý počet sekúnd.<br>
 Použitie: `SLEEP 3` (pozastaví na tri sekundy)
 <br><br>
 **RAISE**<br>
-Používa sa na definíciu a vyhodenie vlastnej chyby.<br>
+Používa sa na definíciu a vyhodenie vlastnej chyby a zrušenie celého chodu programu.<br>
 Použitie: `RAISE: "You can't type a number higher than 0"`
 <br><br>
 **IMPORT**<br>
@@ -185,4 +207,32 @@ Používa sa na výmaz premennej.<br>
 Použitie: `DELETE a`
 <br><br>
 **EXECUTE**<br>
-Vykoná kód napísaný v PRIEMYSLOVAK-u 
+Vykoná kód napísaný v PRIEMYSLOVAK-u v podobe reťazca (string).<br>
+Použitie: `EXECUTE "PRINT \"ahoj svet\""`
+<br><br>
+**TERMINATE**<br>
+Používa sa na zrušenie celého chodu programu.<br>
+Použitie: `TERMINATE`
+<br><br>
+**TO_STRING**<br>
+Používa sa na konverziu akéhokoľvek datatypu na string.<br>
+Použitie: `TO_STRING 5`
+<br><br>
+**TO_INT**<br>
+Používa sa na konverziu z datatypu string na integer.<br>
+Môže sa aj použiť na zaokruhlenie float.<br>
+Použitie: `TO_INT "5"`
+<br><br>
+**TO_FLOAT**<br>
+Používa sa na konverziu z datatypu string na float.<br>
+Použitie: `TO_FLOAT "5.5"`
+**RANDOM**<br>
+Používa sa na generáciu náhodného desatinného čísla od 0 do 1.<br>
+Použitie s príkladmi:<br>
+```
+a = RANDOM // premenná a má vložené náhodné desatinné číslo od 0 do 1 (0.107861)
+
+PRINT TO_INT (RANDOM * 100) // náhodné číslo od 0 do 100
+PRINT TO_INT (RANDOM * 98 + 2) // náhodné číslo od 2 do 100
+PRINT TO_INT (RANDOM + 3) // náhodné číslo od 3 do 4
+```
