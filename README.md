@@ -16,6 +16,9 @@ Príklad:<br>
 `(5 + 6) * 2` je 22.
 
 ### Premenné
-Premenná sa môže vytvoriť takto:
-
-``
+Premenná sa môže vytvoriť takto:<br>
+`a = 1` (do premennej a je vložená hodnota 1)
+<br><br>
+Premenná sa môže aktualizovať použitím úplne rovnakého spôsobu.<br>
+K hodnote premennej sa môže pristupovať ako v každom jazyku - jednoducho napíšeme názov premennej:<br>
+`9 + a` (a sa nahradí 1, potom sa vypočíta 9 + 1 = 10)
