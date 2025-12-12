@@ -15,6 +15,8 @@ x86_64-w64-mingw32-g++ -static-libgcc -static-libstdc++ -std=c++23 main.cpp stat
 ```
 
 ## Ako používať tento jazyk?
+Jazyk môžete spustiť v termináli príkazom `priemyslovak.exe` (alebo `./priemyslovak`, ak používate Linux). Scripty v jazyku PRIEMYSLOVAK končia *.priem*. Ak chcete spustiť script, jednoducho pridajte cestu, ktorá odkazuje na script: `priemyslovak.exe cesta/odkazujuca/na/script`.
+
 ### Datatypy
 V jazyku PRIEMYSLOVAK sa využívajú tieto dátové typy:<br>
 - INTEGER
