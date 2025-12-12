@@ -27,6 +27,21 @@ Príklad:<br>
 Stringy sa môžu zlúčiť pomocou +:<br>
 `"ahoj " + "svet"` ("ahoj svet")
 
+### Logické operátory
+Existuje 7 logických operátorov:
+- ~
+- ==
+- ~=
+- >=
+- <=
+- >
+- <
+
+Použitie: `1 == 1` (vráti TRUE)
+<br><br>
+Znamieko ~ (NOT) je možné použiť len na samostatnú hodnotu.<br>
+Príklad: `~8` (prevráti všetky bity čísla 8 a vráti -9)
+
 ### Premenné
 Premenná sa môže vytvoriť takto:<br>
 `a = 1` (do premennej a je vložená hodnota 1)
@@ -41,10 +56,10 @@ PRIEMYSLOVAK má zadefinovaných 27 keywordov:<br>
 - INPUT
 - IF
 - ELIF
+- ELSE
 - AND
 - OR
 - END
-- ELSE
 - GOTO
 - THEN
 - FOR
@@ -91,7 +106,7 @@ ELIF (TRUE) THEN
   PRINT "B"
 END
 ```
-<br>
+<br><br>
 **ELSE**<br>
 Má takú istú funkciu ako ELIF, ale je vždy TRUE. Dáva sa na koniec condition reťazca.<br>
 ```
@@ -107,3 +122,16 @@ ELSE // VYKONÁ SA ELSE
   PRINT "C"
 END
 ```
+<br><br>
+**AND**<br>
+Vráti TRUE, ak sú podmienky na ľavej aj pravej strane TRUE.<br>
+Použitie: `0 == 0 AND 1 == 0` (vráti FALSE, pretože 1 == 0 neplatí)<br>
+<br><br>
+**OR**<br>
+Vráti TRUE, ak je aspoň jedno z podmienok TRUE.<br>
+Použitie: `0 == 0 OR 1 == 0` (vráti TRUE, pretože 0 == 0 platí)<br>
+<br><br>
+**END**<br>
+Používa sa na ukončenie *IF*, *ELIF*, *ELSE*, *WHILE* a *FOR* blokov.<br>
+<br><br>
+**GOTO**<br>
