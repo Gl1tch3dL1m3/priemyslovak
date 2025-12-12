@@ -1,0 +1,8 @@
+FOR i = 0 TO 10 STEP 2 DO
+    PRINT i
+    PRINT ""
+    FOR j = 0 TO 10 STEP 3 DO
+        PRINT j
+    END
+    PRINT ""
+END
