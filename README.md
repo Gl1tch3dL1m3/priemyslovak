@@ -32,9 +32,9 @@ Existuje 7 logických operátorov:
 - ~
 - ==
 - ~=
-- >=
+- \>=
 - <=
-- >
+- \>
 - <
 
 Použitie: `1 == 1` (vráti TRUE)
