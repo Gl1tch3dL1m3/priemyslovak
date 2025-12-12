@@ -1,0 +1,48 @@
+gen_num = TO_INT (RANDOM * 100 + 1)
+lives = 5
+
+PRINTLN "Vitajte v hre TAJNÉ ČÍSLO!\nUhádnite číslo od 1 do 100!\nMáte 5 životov."
+
+WHILE (TRUE) DO
+    user_num = INPUT
+    skip = true
+    
+    // Kontrola zadanej hodnoty (musí byť od 1 do 100!)
+    FOR i = 1 TO 100 DO
+        IF (TO_STRING i == user_num) THEN
+            skip = false
+            BREAK
+        END
+    END
+
+    IF (skip) THEN
+        PRINTLN "Prosím, zadaj len číslo od 1 do 100!"
+        CONTINUE
+    END
+
+    user_num = TO_INT user_num
+
+    IF (user_num ~= gen_num) THEN
+        lives = lives - 1
+
+        IF (lives == 0) THEN
+            PRINTLN "Prehrali ste! KONIEC HRY!"
+            BREAK
+        END
+
+        ELIF (user_num < gen_num) THEN
+            PRINTLN "Tajné číslo je VÄČŠIE!"
+        END
+
+        ELSE
+            PRINTLN "Tajné číslo je MENŠIE!"
+        END
+
+        PRINTLN "Teraz máte " + TO_STRING lives + " životov!"
+    END
+
+    ELSE
+        PRINTLN "Uhádli ste tajné číslo! Gratulujeme! KONIEC HRY!"
+        BREAK
+    END
+END
