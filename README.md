@@ -84,10 +84,26 @@ Má takú istú funkciu ako *IF*, ale vykoná sa len vtedy, ak je predošlá con
 Použitie:<br>
 ```
 IF (FALSE) THEN // AK BY TOTO BOLA PRAVDA, ELIF CONDITION BY SA NEPLATIL
-  PRINT "A" //
+  PRINT "A"
 END
 
 ELIF (TRUE) THEN
   PRINT "B"
+END
+```
+<br><br>
+**ELSE**<br>
+Má takú istú funkciu ako ELIF, ale je vždy TRUE. Dáva sa na koniec condition reťazca.<br>
+```
+IF (FALSE) THEN
+  PRINT "A"
+END
+
+ELIF (FALSE) THEN
+  PRINT "B"
+END
+
+ELSE // VYKONÁ SA ELSE
+  PRINT "C"
 END
 ```
