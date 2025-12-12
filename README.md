@@ -82,10 +82,12 @@ Musí sa končiť keywordom *END*!
 **ELIF**<br>
 Má takú istú funkciu ako *IF*, ale vykoná sa len vtedy, ak je predošlá condition FALSE.<br>
 Použitie:<br>
-`IF (FALSE) THEN
+```
+IF (FALSE) THEN // AK BY TOTO BOLA PRAVDA, ELIF CONDITION BY SA NEPLATIL
   PRINT "A" //
 END
 
 ELIF (TRUE) THEN
   PRINT "B"
-END`
+END
+```
