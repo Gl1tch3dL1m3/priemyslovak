@@ -78,16 +78,16 @@ K hodnote premennej sa môže pristupovať ako v každom jazyku - jednoducho nap
 Arrays (polia) zoskupujú viaceré hodnoty do jedného datatypu.<br>
 Príklad: `a = [1,2,3]` (premenná a obsahuje pole, v ktorom sú čísla 1, 2, 3)
 <br><br>
-K hodnotám poľa sa dá pristupovať jednotlivo pomocou indexovania. Ak je pole `[1,2,3,4]` a chceme získať prvú hodnotu (1), spravíme to takto:<br>
+K hodnotám poľa sa dá pristupovať jednotlivo pomocou indexovania. Hodnoty poľa sa dajú meniť ako premenné.<br>
 ```
 a = [1,2,3,4]
 PRINTLN a[0] // 1
+
+a[0] = 5
+PRINT a // [5,2,3,4]
 ```
 <br>
 Indexy sa začínajú nulou, takže prvá hodnota je na indexe 0, druhá na indexe 1, atď.
-<br><br>
-Hodnoty poľa sa môžu meniť takisto ako premenné:<br>
-`a[0] = 5` (pole vyzerá teraz takto: [5,2,3,4])
 
 ### Keywordy
 Keywordy sú príkazy interpretera, ktoré majú určité funkcie. PRIEMYSLOVAK má zadefinovaných 28 keywordov:<br>
