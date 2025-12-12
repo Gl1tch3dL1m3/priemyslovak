@@ -11,8 +11,8 @@ Platia matematické operácie! Najskôr sa vypočíta ^ (mocnina), potom *, /, %
 
 Zátvorky sa tiež dajú použiť. Interpreter sa vždy bude venovať zátvorkam ako prvým!
 
-Príklad:\n
-`5 + 6 * 2` je 17.\n
+Príklad:<br>
+`5 + 6 * 2` je 17.<br>
 `(5 + 6) * 2` je 22.
 
 ### Premenné
