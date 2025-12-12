@@ -1,5 +1,5 @@
 # PRIEMYSLOVAK
-PRIEMYSLOVAK je programovací jazyk, ktorý bol vytvorený ako maturitný projekt. Jeho syntax je odvodená z jazyka BASIC. Ak chcete začať s programovaním bez komplexného syntaxu, tento jazyk je pre vás!
+PRIEMYSLOVAK je programovací jazyk, ktorý bol vytvorený ako maturitný projekt. Jeho syntax je odvodená z jazyka BASIC.
 
 **UPOZORNENIE** ⚠️
 
@@ -11,6 +11,11 @@ Platia matematické operácie! Najskôr sa vypočíta ^ (mocnina), potom *, /, %
 
 Zátvorky sa tiež dajú použiť. Interpreter sa vždy bude venovať zátvorkam ako prvým!
 
-Príklad:
-`5 + 6 * 2` je 17.
+Príklad:\n
+`5 + 6 * 2` je 17.\n
 `(5 + 6) * 2` je 22.
+
+### Premenné
+Premenná sa môže vytvoriť takto:
+
+``
