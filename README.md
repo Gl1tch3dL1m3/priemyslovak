@@ -127,9 +127,8 @@ Používa sa na získanie vstupu od používateľa.<br>
 Použitie: `INPUT` (môže sa už rovno vložiť do premennej: `a = INPUT`)
 <br><br>
 **IF**<br>
-Používa sa na vykonanie rozhodnutí.
-Použitie:<br>
-`IF (condition) THEN`<br>
+Používa sa na vykonanie rozhodnutí.<br>
+Použitie: `IF (condition) THEN`<br>
 Musí sa končiť keywordom *END*!
 <br><br>
 **ELIF**<br>
