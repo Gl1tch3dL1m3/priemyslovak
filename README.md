@@ -273,13 +273,6 @@ PRINTLN TO_INT (RANDOM + 3) // náhodné číslo od 3 do 4
 </details>
 <details>
 <summary>English 🇬🇧</summary>
-Jasné! Tu je preklad tvojho Markdown súboru do angličtiny, pričom som zachoval **štruktúru, nadpisy, zoznamy a kódové bloky**:
-
----
-
-****This guide is written in English. If you want a Slovak version, [click here]().****
-
-# PRIEMYSLOVAK
 
 PRIEMYSLOVAK is a programming language created as a graduation project. Its syntax is derived from BASIC. It is also my first project in C++ and the first programming language I have ever created. <br><br>
 **WARNING** ⚠️<br>
