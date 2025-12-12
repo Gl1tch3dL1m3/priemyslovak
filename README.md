@@ -220,7 +220,7 @@ Použitie: `TO_STRING 5`
 <br><br>
 **TO_INT**<br>
 Používa sa na konverziu z datatypu string na integer.<br>
-Môže sa aj použiť na zaokruhlenie float.<br>
+Môže sa aj použiť na zaokrúhlenie float.<br>
 Použitie: `TO_INT "5"`
 <br><br>
 **TO_FLOAT**<br>
