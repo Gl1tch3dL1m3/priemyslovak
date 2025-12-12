@@ -85,6 +85,9 @@ PRINTLN a[0] // 1
 ```
 <br>
 Indexy sa začínajú nulou, takže prvá hodnota je na indexe 0, druhá na indexe 1, atď.
+<br><br>
+Hodnoty poľa sa môžu meniť takisto ako premenné:<br>
+`a[0] = 5` (pole vyzerá teraz takto: [5,2,3,4])
 
 ### Keywordy
 Keywordy sú príkazy interpretera, ktoré majú určité funkcie. PRIEMYSLOVAK má zadefinovaných 28 keywordov:<br>
