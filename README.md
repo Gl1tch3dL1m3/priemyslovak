@@ -229,7 +229,7 @@ Použitie: `SLEEP 3` (pozastaví na tri sekundy)
 <br><br>
 **RAISE**<br>
 Používa sa na definíciu a vyhodenie vlastnej chyby a zrušenie celého chodu programu.<br>
-Použitie: `RAISE: "You can't type a number higher than 0"`
+Použitie: `RAISE "You can't type a number higher than 0"`
 <br><br>
 **IMPORT**<br>
 Používa sa na zlúčenie viacerých scriptov. Po zlúčení je možné použiť premenné daných scriptov.<br>
@@ -516,7 +516,7 @@ Pauses program execution for a number of seconds.<br>
 Usage: `SLEEP 3` (pauses for 3 seconds) <br><br>
 **RAISE**<br>
 Defines and throws a custom error, terminating the program.<br>
-Usage: `RAISE: "You can't type a number higher than 0"` <br><br>
+Usage: `RAISE "You can't type a number higher than 0"` <br><br>
 **IMPORT**<br>
 Used to merge multiple scripts. After merging, variables from the scripts can be used.<br>
 Usage: `IMPORT "scripts/TEST.priem"` <br><br>
