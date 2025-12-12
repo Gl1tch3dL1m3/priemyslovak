@@ -5,13 +5,13 @@ PRIEMYSLOVAK je programovací jazyk, ktorý bol vytvorený ako maturitný projek
 *Maximálne neodporúčam využívať tento jazyk v akomkoľvek projekte! Jazyk neobsahuje funkcie, triedy, ani základné atribúty. Rýchlosť tohto jazyka je 1000x pomalšia ako Python (pre porovnanie: Python napočíta do 1 000 000 za zlomok sekundy, PRIEMYSLOVAK za 3 minúty). Dôvodom je to, že Python je z časti aj kompilovaný, pretože celý kód sa preloží do Python bytecodu, ktorý sa následne interpretuje a nekontroluje. PRIEMYSLOVAK môže skontrolovať jeden riadok aj 5x, čo spôsobuje brutálne spomalenie. Taktiež, parser nekontroluje iba syntax, ale aj datatypy. Viem, že to tak nemá byť, ale keď som si to už uvedomil, tak bolo neskoro.*
 
 # Kompilácia
-Windows:<br>
-```
-g++ -std=c++23 main.cpp statuses.cpp lexer.cpp basicfunctions.cpp parser.cpp interpreter.cpp -o priemyslovak.exe
-```
 Linux:<br>
 ```
 g++ -std=c++23 main.cpp statuses.cpp lexer.cpp basicfunctions.cpp parser.cpp interpreter.cpp -o priemyslovak
+```
+Windows (kompilované na Linuxe):<br>
+```
+x86_64-w64-mingw32-g++ -static-libgcc -static-libstdc++ -std=c++23 main.cpp statuses.cpp lexer.cpp basicfunctions.cpp parser.cpp interpreter.cpp -o priemyslovak.exe
 ```
 
 ## Ako používať tento jazyk?
