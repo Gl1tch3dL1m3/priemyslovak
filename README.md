@@ -149,6 +149,7 @@ END
 <br><br>
 **FOR**<br>
 Cyklus, ktorý sa opakuje, kým vložená premenná sa nerovná už vopred stanovému číslu.<br>
+Môže sa kombinovať s keywordom *STEP*, ktorý určuje o koľko sa hodnota danej premennej zvýši každým cyklom.
 Použitie:<br>
 ```
 FOR i = 0 TO 10 DO
@@ -166,3 +167,22 @@ Použitie: `BREAK`
 **CONTINUE**<br>
 Ukončí blok loopu a začne ďalšiu iteráciu.<br>
 Použitie: `CONTINUE`
+<br><br>
+**SLEEP**<br>
+Pozastaví chod programu na určitý počet sekúnd.<br>
+Použitie: `SLEEP 3` (pozastaví na tri sekundy)
+<br><br>
+**RAISE**<br>
+Používa sa na definíciu a vyhodenie vlastnej chyby.<br>
+Použitie: `RAISE: "You can't type a number higher than 0"`
+<br><br>
+**IMPORT**<br>
+Používa sa na zlúčenie viacerých scriptov. Po zlúčení je možné použiť premenné daných scriptov.<br>
+Použitie: `IMPORT "scripts/TEST.priem"`
+<br><br>
+**DELETE**<br>
+Používa sa na výmaz premennej.<br>
+Použitie: `DELETE a`
+<br><br>
+**EXECUTE**<br>
+Vykoná kód napísaný v PRIEMYSLOVAK-u 
