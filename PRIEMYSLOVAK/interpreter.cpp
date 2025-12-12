@@ -1027,7 +1027,7 @@ void cancel_comparision(vector<Token> &tokens, int &i, int &start_i, int &end_i,
 void print_array(string array_index)
 {
     vector<Token>& array { arrays.at(array_index) };
-    long unsigned int arr_size { array.size() };
+    const long long unsigned int arr_size { array.size() };
 
     cout << "[";
     for (int i {0}; i < arr_size; i++)
@@ -1047,7 +1047,7 @@ void print_array(string array_index)
 void delete_array(string array_index)
 {
     vector<Token>& array { arrays.at(array_index) };
-    long unsigned int arr_size { array.size() };
+    const long long unsigned int arr_size { array.size() };
 
     for (int i {0}; i < arr_size; i++)
     {
