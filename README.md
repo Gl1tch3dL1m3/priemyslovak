@@ -87,8 +87,9 @@ PRINTLN a[0] // 1
 Indexy sa začínajú nulou, takže prvá hodnota je na indexe 0, druhá na indexe 1, atď.
 
 ### Keywordy
-PRIEMYSLOVAK má zadefinovaných 27 keywordov:<br>
+Keywordy sú príkazy interpretera, ktoré majú určité funkcie. PRIEMYSLOVAK má zadefinovaných 28 keywordov:<br>
 - PRINT
+- PRINTLN
 - INPUT
 - IF
 - ELIF
@@ -118,6 +119,7 @@ PRIEMYSLOVAK má zadefinovaných 27 keywordov:<br>
 
 **PRINT**<br>
 Používa sa na výpis hodnoty do konzole.<br>
+Existuje ešte *PRINTLN*, ktorý na koniec prejde na nový riadok. *PRINT* ostane na jedom riadku.<br>
 Použitie: `PRINT <hodnota>`
 <br><br>
 **INPUT**<br>
