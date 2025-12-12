@@ -226,6 +226,7 @@ Použitie: `TO_INT "5"`
 **TO_FLOAT**<br>
 Používa sa na konverziu z datatypu string na float.<br>
 Použitie: `TO_FLOAT "5.5"`
+<br><br>
 **RANDOM**<br>
 Používa sa na generáciu náhodného desatinného čísla od 0 do 1.<br>
 Použitie s príkladmi:<br>
