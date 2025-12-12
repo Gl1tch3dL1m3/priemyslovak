@@ -1,6 +1,6 @@
-**__This guide is written in Slovak. If you want an english version, [click here]().__**
-
 # PRIEMYSLOVAK
+<details>
+<summary>Slovak 🇸🇰</summary>
 PRIEMYSLOVAK je programovací jazyk, ktorý bol vytvorený ako maturitný projekt. Jeho syntax je odvodená z jazyka BASIC. Je to taktiež môj prvý projekt v C++ a prvý programovací jazyk, aký som kedy spravil.
 <br><br>
 **UPOZORNENIE** ⚠️<br>
@@ -269,3 +269,4 @@ PRINTLN TO_INT (RANDOM * 100) // náhodné číslo od 0 do 100
 PRINTLN TO_INT (RANDOM * 98 + 2) // náhodné číslo od 2 do 100
 PRINTLN TO_INT (RANDOM + 3) // náhodné číslo od 3 do 4
 ```
+</details>
