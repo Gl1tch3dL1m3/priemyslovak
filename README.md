@@ -61,9 +61,9 @@ Escape characters sú znaky v stringe, ktoré majú špeciálne funkcie. PRIEMYS
 - \n (nový riadok)
 - \t (horizontálny tabulátor)
 - \r (návrat na začiatok riadku)
-- \\ (backslash)
-- \' (apostrof)
-- \" (úvodzovky)
+- \\\ (backslash)
+- \\' (apostrof)
+- \\" (úvodzovky)
 - \b (backspace)
 
 ### Premenné
