@@ -99,7 +99,7 @@ a = [1,2,3,4]
 PRINTLN a[0] // 1
 
 a[0] = 5
-PRINT a // [5,2,3,4]
+PRINTLN a // [5,2,3,4]
 ```
 <br>
 Indexy sa začínajú nulou, takže prvá hodnota je na indexe 0, druhá na indexe 1, atď.
@@ -154,11 +154,11 @@ Má takú istú funkciu ako *IF*, ale vykoná sa len vtedy, ak je predošlá con
 Použitie:<br>
 ```
 IF (FALSE) THEN // AK BY TOTO BOLA PRAVDA, ELIF CONDITION BY SA NEPLATIL
-  PRINT "A"
+  PRINTLN "A"
 END
 
 ELIF (TRUE) THEN
-  PRINT "B"
+  PRINTLN "B"
 END
 ```
 <br><br>
@@ -166,15 +166,15 @@ END
 Má takú istú funkciu ako ELIF, ale je vždy TRUE. Dáva sa na koniec condition reťazca.<br>
 ```
 IF (FALSE) THEN
-  PRINT "A"
+  PRINTLN "A"
 END
 
 ELIF (FALSE) THEN
-  PRINT "B"
+  PRINTLN "B"
 END
 
 ELSE // VYKONÁ SA ELSE
-  PRINT "C"
+  PRINTLN "C"
 END
 ```
 <br><br>
@@ -385,7 +385,7 @@ a = [1,2,3,4]
 PRINTLN a[0] // 1
 
 a[0] = 5
-PRINT a // [5,2,3,4]
+PRINTLN a // [5,2,3,4]
 ```
 
 <br>
@@ -441,11 +441,11 @@ Usage:<br>
 
 ```
 IF (FALSE) THEN // IF was FALSE, ELIF condition will execute
-  PRINT "A"
+  PRINTLN "A"
 END
 
 ELIF (TRUE) THEN
-  PRINT "B"
+  PRINTLN "B"
 END
 ```
 
@@ -455,15 +455,15 @@ Same as ELIF, but always TRUE. Placed at the end of a condition chain.<br>
 
 ```
 IF (FALSE) THEN
-  PRINT "A"
+  PRINTLN "A"
 END
 
 ELIF (FALSE) THEN
-  PRINT "B"
+  PRINTLN "B"
 END
 
 ELSE // ELSE executes
-  PRINT "C"
+  PRINTLN "C"
 END
 ```
 
