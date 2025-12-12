@@ -125,13 +125,44 @@ END
 <br><br>
 **AND**<br>
 Vráti TRUE, ak sú podmienky na ľavej aj pravej strane TRUE.<br>
-Použitie: `0 == 0 AND 1 == 0` (vráti FALSE, pretože 1 == 0 neplatí)<br>
+Použitie: `0 == 0 AND 1 == 0` (vráti FALSE, pretože 1 == 0 neplatí)
 <br><br>
 **OR**<br>
 Vráti TRUE, ak je aspoň jedno z podmienok TRUE.<br>
-Použitie: `0 == 0 OR 1 == 0` (vráti TRUE, pretože 0 == 0 platí)<br>
+Použitie: `0 == 0 OR 1 == 0` (vráti TRUE, pretože 0 == 0 platí)
 <br><br>
 **END**<br>
-Používa sa na ukončenie *IF*, *ELIF*, *ELSE*, *WHILE* a *FOR* blokov.<br>
+Používa sa na ukončenie *IF*, *ELIF*, *ELSE*, *WHILE* a *FOR* blokov.
 <br><br>
 **GOTO**<br>
+Skočí na určitý riadok kódu, vráti sa a pôjde ďalej.<br>
+Použitie: `GOTO 1` (skočí na riadok 1 a potom pokračuje tam, kde skončil)
+<br><br>
+**WHILE**<br>
+Klasický podmienkový cyklus. Určitý blok kódu sa opakuje dokým platí zadaná podmienka.<br>
+Použitie:<br>
+```
+WHILE (0 == 0) DO
+  PRINT "ahoj svet" // nekonečný cyklus
+END
+```
+<br><br>
+**FOR**<br>
+Cyklus, ktorý sa opakuje, kým vložená premenná sa nerovná už vopred stanovému číslu.<br>
+Použitie:<br>
+```
+FOR i = 0 TO 10 DO
+  PRINT i
+END // 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10
+
+FOR i = 0 TO 10 STEP 2 DO
+  PRINT i // 0, 2, 4, 6, 8, 10
+END
+```
+**BREAK**<br>
+Používa sa na ukončenie loopu, v ktorom sa keyword nachádza.<br>
+Použitie: `BREAK`
+<br><br>
+**CONTINUE**<br>
+Ukončí blok loopu a začne ďalšiu iteráciu.<br>
+Použitie: `CONTINUE`
