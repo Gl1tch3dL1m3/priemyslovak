@@ -1,8 +1,0 @@
-PRINTLN "LOADING"
-
-FOR i = 0 TO 100 STEP 10 DO
-    SLEEP 0.5
-    PRINT "Loading... " + TO_STRING i + "%\r"
-END
-
-PRINTLN ""
