@@ -18,7 +18,7 @@ x86_64-w64-mingw32-g++ -static-libgcc -static-libstdc++ -std=c++23 main.cpp stat
 ```
 
 ## Ako používať tento jazyk?
-Jazyk môžete spustiť v termináli príkazom `priemyslovak.exe` (alebo `./priemyslovak`, ak používate Linux). Scripty v jazyku PRIEMYSLOVAK končia *.priem*. Ak chcete spustiť script, jednoducho pridajte cestu, ktorá odkazuje na script: `priemyslovak.exe cesta/odkazujuca/na/script`.
+Jazyk môžete spustiť v termináli príkazom `priemyslovak.exe` (alebo `./priemyslovak`, ak používate Linux). Scripty v jazyku PRIEMYSLOVAK končia *.priem*. Ak chcete spustiť script, jednoducho pridajte cestu, ktorá odkazuje na script: `priemyslovak.exe cesta/odkazujuca/na/script`. Ukážkové scripty môžete nájsť [tu](https://github.com/Gl1tch3dL1m3/priemyslovak/tree/main/PRIEMYSLOVAK/scripts).
 
 ### Datatypy
 V jazyku PRIEMYSLOVAK sa využívajú tieto dátové typy:<br>
@@ -294,7 +294,7 @@ x86_64-w64-mingw32-g++ -static-libgcc -static-libstdc++ -std=c++23 main.cpp stat
 
 ## How to use this language?
 
-You can run the language in the terminal using `priemyslovak.exe` (or `./priemyslovak` on Linux). Scripts in PRIEMYSLOVAK end with *.priem*. To run a script, simply provide the path to the script: `priemyslovak.exe path/to/script`.
+You can run the language in the terminal using `priemyslovak.exe` (or `./priemyslovak` on Linux). Scripts in PRIEMYSLOVAK end with *.priem*. To run a script, simply provide the path to the script: `priemyslovak.exe path/to/script`. Sample scripts can be found [here](https://github.com/Gl1tch3dL1m3/priemyslovak/tree/main/PRIEMYSLOVAK/scripts).
 
 ### Data types
 
