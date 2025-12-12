@@ -2,7 +2,7 @@
 
 ------ PRIEMYSLOVAK ------
 Vitajte v zdrojovom kóde programovacieho jazyka PRIEMYSLOVAK!
-Príručku používania nájdete v zložke "documents".
+Príručku používania nájdete na GitHube (https://github.com/Gl1tch3dL1m3/priemyslovak/tree/main).
 
 Je kód chaotický? To je len ilúzia :p
 
