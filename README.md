@@ -1,6 +1,7 @@
 # PRIEMYSLOVAK
 <details>
 <summary>Slovak 🇸🇰</summary>
+  
 PRIEMYSLOVAK je programovací jazyk, ktorý bol vytvorený ako maturitný projekt. Jeho syntax je odvodená z jazyka BASIC. Je to taktiež môj prvý projekt v C++ a prvý programovací jazyk, aký som kedy spravil.
 <br><br>
 **UPOZORNENIE** ⚠️<br>
@@ -268,5 +269,290 @@ a = RANDOM // premenná a má vložené náhodné desatinné číslo od 0 do 1 (
 PRINTLN TO_INT (RANDOM * 100) // náhodné číslo od 0 do 100
 PRINTLN TO_INT (RANDOM * 98 + 2) // náhodné číslo od 2 do 100
 PRINTLN TO_INT (RANDOM + 3) // náhodné číslo od 3 do 4
+```
+</details>
+<details>
+<summary>English 🇬🇧</summary>
+Jasné! Tu je preklad tvojho Markdown súboru do angličtiny, pričom som zachoval **štruktúru, nadpisy, zoznamy a kódové bloky**:
+
+---
+
+****This guide is written in English. If you want a Slovak version, [click here]().****
+
+# PRIEMYSLOVAK
+
+PRIEMYSLOVAK is a programming language created as a graduation project. Its syntax is derived from BASIC. It is also my first project in C++ and the first programming language I have ever created. <br><br>
+**WARNING** ⚠️<br>
+*I strongly advise against using this language in any real project! The language does not support functions, classes, or basic attributes. The speed of this language is 1000x slower than Python (for comparison: Python counts to 1,000,000 in a fraction of a second, PRIEMYSLOVAK takes 3 minutes). The reason is that Python is partially compiled, as the whole code is converted into Python bytecode, which is then interpreted without checking. PRIEMYSLOVAK may check the same line up to 5 times, causing severe slowdown. Also, the parser checks not only syntax but also data types. I know it shouldn’t be like this, but by the time I realized it, it was too late.*
+
+# Compilation
+
+Linux:<br>
+
+```
+g++ -std=c++23 main.cpp statuses.cpp lexer.cpp basicfunctions.cpp parser.cpp interpreter.cpp -o priemyslovak
+```
+
+Windows (compiled on Linux):<br>
+
+```
+x86_64-w64-mingw32-g++ -static-libgcc -static-libstdc++ -std=c++23 main.cpp statuses.cpp lexer.cpp basicfunctions.cpp parser.cpp interpreter.cpp -o priemyslovak.exe
+```
+
+## How to use this language?
+
+You can run the language in the terminal using `priemyslovak.exe` (or `./priemyslovak` on Linux). Scripts in PRIEMYSLOVAK end with *.priem*. To run a script, simply provide the path to the script: `priemyslovak.exe path/to/script`.
+
+### Data types
+
+The following data types are used in PRIEMYSLOVAK:<br>
+
+- INTEGER
+- FLOAT
+- STRING
+- BOOL
+- NONETYPE
+- ARRAY
+
+### Operations
+
+Classic math operations are supported: +, -, *, /, ^, %.
+Mathematical order of operations applies! First `^` (power), then *, /, %, then +, -.
+
+Parentheses can also be used. The interpreter always evaluates parentheses first!
+
+Example:<br>
+`5 + 6 * 2` equals 17.<br>
+`(5 + 6) * 2` equals 22.
+
+Strings can be concatenated using +:<br>
+`"hello " + "world"` ("hello world")
+
+### Logical operators
+
+There are 7 logical operators:
+
+- ~
+- ==
+- ~=
+- \>=
+- <=
+- \>
+- <
+
+Usage: `1 == 1` (returns TRUE) <br><br>
+The `~` (NOT) operator can only be used on a single value.<br>
+Example: `~8` (inverts all bits of the number 8, returning -9)
+
+### Comments
+
+Comments are lines of code ignored by the interpreter. They can be placed anywhere:
+
+```
+// This is a comment
+1 + 5 // This is also a comment, but 1 + 5 still executes!
+
+/* This
+is
+a
+multi-line
+comment */
+
+/* Can also be on a single line */
+```
+
+### Escape characters
+
+Escape characters are characters in strings with special functions. PRIEMYSLOVAK supports these:<br>
+
+* \n (newline)
+* \t (horizontal tab)
+* \r (carriage return)
+* \\\ (backslash)
+* \\' (apostrophe)
+* \\" (quotation marks)
+* \b (backspace)
+
+### Variables
+
+Variables can be created like this:<br>
+`a = 1` (assigns value 1 to variable `a`) <br><br>
+Variables can be updated in the same way.<br>
+You can access a variable’s value like in any other language:<br>
+`9 + a` (`a` is replaced with 1, then 9 + 1 = 10)
+
+### Arrays
+
+Arrays group multiple values into a single data type.<br>
+Example: `a = [1,2,3]` (variable `a` contains an array with values 1, 2, 3) <br><br>
+Array values can be accessed individually by index and modified like variables.<br>
+
+```
+a = [1,2,3,4]
+PRINTLN a[0] // 1
+
+a[0] = 5
+PRINT a // [5,2,3,4]
+```
+
+<br>
+Indexes start at zero: the first value is at index 0, the second at index 1, etc.
+
+### Keywords
+
+Keywords are interpreter commands with specific functions. PRIEMYSLOVAK has 28 defined keywords:<br>
+
+* PRINT
+* PRINTLN
+* INPUT
+* IF
+* ELIF
+* ELSE
+* AND
+* OR
+* END
+* GOTO
+* THEN
+* FOR
+* TO
+* STEP
+* WHILE
+* BREAK
+* CONTINUE
+* DO
+* SLEEP
+* RAISE
+* IMPORT
+* DELETE
+* EXECUTE
+* TERMINATE
+* TO_STRING
+* TO_INT
+* TO_FLOAT
+* RANDOM
+
+**PRINT**<br>
+Used to output a value to the console.
+`PRINTLN` prints the value and moves to a new line. `PRINT` stays on the same line.
+Usage: `PRINT <value>` <br><br>
+**INPUT**<br>
+Used to get user input.
+Usage: `INPUT` (can be assigned directly to a variable: `a = INPUT`) <br><br>
+**IF**<br>
+Used for conditional execution.
+Usage: `IF (condition) THEN`<br>
+Must end with the keyword `END`! <br><br>
+**ELIF**<br>
+Same as IF, but executes only if the previous condition was FALSE.<br>
+Usage:<br>
+
+```
+IF (FALSE) THEN // IF was FALSE, ELIF condition will execute
+  PRINT "A"
+END
+
+ELIF (TRUE) THEN
+  PRINT "B"
+END
+```
+
+<br><br>
+**ELSE**<br>
+Same as ELIF, but always TRUE. Placed at the end of a condition chain.<br>
+
+```
+IF (FALSE) THEN
+  PRINT "A"
+END
+
+ELIF (FALSE) THEN
+  PRINT "B"
+END
+
+ELSE // ELSE executes
+  PRINT "C"
+END
+```
+
+<br><br>
+**AND**<br>
+Returns TRUE if both left and right conditions are TRUE.<br>
+Usage: `0 == 0 AND 1 == 0` (returns FALSE) <br><br>
+**OR**<br>
+Returns TRUE if at least one condition is TRUE.<br>
+Usage: `0 == 0 OR 1 == 0` (returns TRUE) <br><br>
+**END**<br>
+Ends IF, ELIF, ELSE, WHILE, and FOR blocks. <br><br>
+**GOTO**<br>
+Jumps to a specific line of code. Execution continues from there.<br>
+Usage: `GOTO 1` (jumps to line 1 and continues from there) <br><br>
+**WHILE**<br>
+Classic conditional loop. A block of code repeats while the condition is TRUE.<br>
+Usage:<br>
+
+```
+WHILE (0 == 0) DO
+  PRINT "hello world" // infinite loop
+END
+```
+
+<br><br>
+**FOR**<br>
+A loop that repeats until the variable reaches a predefined value.
+Can be combined with `STEP` to define the increment per iteration.
+Usage:<br>
+
+```
+FOR i = 0 TO 10 DO
+  PRINTLN i
+END // 0,1,2,3,4,5,6,7,8,9,10
+
+FOR i = 0 TO 10 STEP 2 DO
+  PRINTLN i // 0,2,4,6,8,10
+END
+```
+
+**BREAK**<br>
+Exits the loop in which it appears.<br>
+Usage: `BREAK`<br><br>
+**CONTINUE**<br>
+Ends the current iteration and starts the next one.<br>
+Usage: `CONTINUE` <br><br>
+**SLEEP**<br>
+Pauses program execution for a number of seconds.<br>
+Usage: `SLEEP 3` (pauses for 3 seconds) <br><br>
+**RAISE**<br>
+Defines and throws a custom error, terminating the program.<br>
+Usage: `RAISE: "You can't type a number higher than 0"` <br><br>
+**IMPORT**<br>
+Used to merge multiple scripts. After merging, variables from the scripts can be used.<br>
+Usage: `IMPORT "scripts/TEST.priem"` <br><br>
+**DELETE**<br>
+Deletes a variable.<br>
+Usage: `DELETE a` <br><br>
+**EXECUTE**<br>
+Executes code written in PRIEMYSLOVAK as a string.<br>
+Usage: `EXECUTE "PRINT \"hello world\""` <br><br>
+**TERMINATE**<br>
+Terminates the program.<br>
+Usage: `TERMINATE` <br><br>
+**TO_STRING**<br>
+Converts any data type to a string.<br>
+Usage: `TO_STRING 5` <br><br>
+**TO_INT**<br>
+Converts a string to an integer (also rounds floats).<br>
+Usage: `TO_INT "5"` <br><br>
+**TO_FLOAT**<br>
+Converts a string to a float.<br>
+Usage: `TO_FLOAT "5.5"` <br><br>
+**RANDOM**<br>
+Generates a random decimal number between 0 and 1.<br>
+Example usage:<br>
+```
+a = RANDOM // a now has a random decimal from 0 to 1 (0.107861)
+
+PRINTLN TO_INT (RANDOM * 100) // random number from 0 to 100
+PRINTLN TO_INT (RANDOM * 98 + 2) // random number from 2 to 100
+PRINTLN TO_INT (RANDOM + 3) // random number from 3 to 4
 ```
 </details>
