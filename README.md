@@ -59,8 +59,12 @@ komentár */
 ### Escape characters
 Escape characters sú znaky v stringe, ktoré majú špeciálne funkcie. PRIEMYSLOVAK podporuje tieto znaky:<br>
 - \n (nový riadok)
-- \t (tabulátor)
-- 
+- \t (horizontálny tabulátor)
+- \r (návrat na začiatok riadku)
+- \\ (backslash)
+- \' (apostrof)
+- \" (úvodzovky)
+- \b (backspace)
 
 ### Premenné
 Premenná sa môže vytvoriť takto:<br>
@@ -71,6 +75,14 @@ K hodnote premennej sa môže pristupovať ako v každom jazyku - jednoducho nap
 `9 + a` (a sa nahradí 1, potom sa vypočíta 9 + 1 = 10)
 
 ### Arrays
+Arrays (polia) zoskupujú viaceré hodnoty do jedného datatypu.<br>
+Príklad: `a = [1,2,3]` (premenná a obsahuje pole, v ktorom sú čísla 1, 2, 3)
+<br><br>
+K hodnotám poľa sa dá pristupovať jednotlivo pomocou indexovania. Ak je pole `[1,2,3,4]` a chceme získať prvú hodnotu (1), spravíme to takto:<br>
+```
+a = [1,2,3,4]
+PRINTLN
+```
 
 ### Keywordy
 PRIEMYSLOVAK má zadefinovaných 27 keywordov:<br>
@@ -175,11 +187,11 @@ Môže sa kombinovať s keywordom *STEP*, ktorý určuje o koľko sa hodnota dan
 Použitie:<br>
 ```
 FOR i = 0 TO 10 DO
-  PRINT i
+  PRINTLN i
 END // 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10
 
 FOR i = 0 TO 10 STEP 2 DO
-  PRINT i // 0, 2, 4, 6, 8, 10
+  PRINTLN i // 0, 2, 4, 6, 8, 10
 END
 ```
 **BREAK**<br>
@@ -233,7 +245,7 @@ Použitie s príkladmi:<br>
 ```
 a = RANDOM // premenná a má vložené náhodné desatinné číslo od 0 do 1 (0.107861)
 
-PRINT TO_INT (RANDOM * 100) // náhodné číslo od 0 do 100
-PRINT TO_INT (RANDOM * 98 + 2) // náhodné číslo od 2 do 100
-PRINT TO_INT (RANDOM + 3) // náhodné číslo od 3 do 4
+PRINTLN TO_INT (RANDOM * 100) // náhodné číslo od 0 do 100
+PRINTLN TO_INT (RANDOM * 98 + 2) // náhodné číslo od 2 do 100
+PRINTLN TO_INT (RANDOM + 3) // náhodné číslo od 3 do 4
 ```
