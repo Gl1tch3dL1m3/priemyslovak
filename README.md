@@ -119,7 +119,7 @@ Keywordy sú príkazy interpretera, ktoré majú určité funkcie. PRIEMYSLOVAK 
 
 **PRINT**<br>
 Používa sa na výpis hodnoty do konzole.<br>
-Existuje ešte *PRINTLN*, ktorý na koniec prejde na nový riadok. *PRINT* ostane na jedom riadku.<br>
+Existuje ešte *PRINTLN*, ktorý po výpise prejde na nový riadok. *PRINT* ostane na jednom riadku.<br>
 Použitie: `PRINT <hodnota>`
 <br><br>
 **INPUT**<br>
