@@ -30,8 +30,8 @@ V jazyku PRIEMYSLOVAK sa využívajú tieto dátové typy:<br>
 - ARRAY
 
 ### Operácie
-Sú tu klasické matematické operácie: +, -, *, /, ^, %.
-Platia matematické operácie! Najskôr sa vypočíta ^ (mocnina), potom *, /, %, potom +, -.
+Sú tu klasické matematické operácie: +, -, *, /, ^, %.<br>
+Jazyk vykonáva operácie v platnom matematickom poradí! Najskôr sa vypočíta ^ (mocnina), potom *, /, % (modulo), potom +, -.
 
 Zátvorky sa tiež dajú použiť. Interpreter sa vždy bude venovať zátvorkam ako prvým!
 
@@ -310,7 +310,7 @@ The following data types are used in PRIEMYSLOVAK:<br>
 ### Operations
 
 Classic math operations are supported: +, -, *, /, ^, %.
-Mathematical order of operations applies! First `^` (power), then *, /, %, then +, -.
+The language performs operations in a valid mathematical order! First ^ (power), then *, /, % (modulo), then +, -.
 
 Parentheses can also be used. The interpreter always evaluates parentheses first!
 
