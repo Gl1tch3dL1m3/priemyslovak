@@ -198,7 +198,7 @@ Klasický podmienkový cyklus. Určitý blok kódu sa opakuje dokým platí zada
 Použitie:<br>
 ```
 WHILE (0 == 0) DO
-  PRINT "ahoj svet" // nekonečný cyklus
+  PRINTLN "ahoj svet" // nekonečný cyklus
 END
 ```
 <br><br>
@@ -485,7 +485,7 @@ Usage:<br>
 
 ```
 WHILE (0 == 0) DO
-  PRINT "hello world" // infinite loop
+  PRINTLN "hello world" // infinite loop
 END
 ```
 
