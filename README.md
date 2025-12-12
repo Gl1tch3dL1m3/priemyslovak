@@ -15,6 +15,14 @@ Príklad:<br>
 `5 + 6 * 2` je 17.<br>
 `(5 + 6) * 2` je 22.
 
+### Datatypy
+V jazyku PRIEMYSLOVAK sa využívajú tieto dátové typy:<br>
+- INTEGER
+- FLOAT
+- STRING
+- BOOL
+- NONETYPE
+
 ### Premenné
 Premenná sa môže vytvoriť takto:<br>
 `a = 1` (do premennej a je vložená hodnota 1)
