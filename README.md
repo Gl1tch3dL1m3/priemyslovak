@@ -81,8 +81,10 @@ Príklad: `a = [1,2,3]` (premenná a obsahuje pole, v ktorom sú čísla 1, 2, 3
 K hodnotám poľa sa dá pristupovať jednotlivo pomocou indexovania. Ak je pole `[1,2,3,4]` a chceme získať prvú hodnotu (1), spravíme to takto:<br>
 ```
 a = [1,2,3,4]
-PRINTLN
+PRINTLN a[0] // 1
 ```
+<br>
+Indexy sa začínajú nulou, takže prvá hodnota je na indexe 0, druhá na indexe 1, atď.
 
 ### Keywordy
 PRIEMYSLOVAK má zadefinovaných 27 keywordov:<br>
