@@ -1,3 +1,5 @@
+**__This guide is written in Slovak. If you want an english version, [click here]().__**
+
 # PRIEMYSLOVAK
 PRIEMYSLOVAK je programovací jazyk, ktorý bol vytvorený ako maturitný projekt. Jeho syntax je odvodená z jazyka BASIC. Je to taktiež môj prvý projekt v C++ a prvý programovací jazyk, aký som kedy spravil.
 <br><br>
