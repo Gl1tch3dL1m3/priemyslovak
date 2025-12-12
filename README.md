@@ -91,7 +91,7 @@ ELIF (TRUE) THEN
   PRINT "B"
 END
 ```
-<br><br>
+<br>
 **ELSE**<br>
 Má takú istú funkciu ako ELIF, ale je vždy TRUE. Dáva sa na koniec condition reťazca.<br>
 ```
