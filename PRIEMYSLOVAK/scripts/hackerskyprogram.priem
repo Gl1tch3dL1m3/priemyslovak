@@ -1,25 +1,25 @@
-PRINT "Dobrý deň! Ďakujeme za záujem o našu pracovnú ponuku - skladovanie výbušnín! Následujúci dotazník Vás prevedie otázkami, ktoré sú pre nás nevyhnutné, aby sme zistili Vašu spôsobilosť pre túto pozíciu. Ak Vás vyberieme, dozviete sa všetky informácie o zamestnávateľovi a Vašom novom pracovnom mieste! Začíname...\n"
+PRINTLN "Dobrý deň! Ďakujeme za záujem o našu pracovnú ponuku - skladovanie výbušnín! Následujúci dotazník Vás prevedie otázkami, ktoré sú pre nás nevyhnutné, aby sme zistili Vašu spôsobilosť pre túto pozíciu. Ak Vás vyberieme, dozviete sa všetky informácie o zamestnávateľovi a Vašom novom pracovnom mieste! Začíname...\n"
 
-PRINT "Prosím, zadaj svoje meno:"
+PRINTLN "Prosím, zadaj svoje meno:"
 INPUT
-PRINT "Teraz zadaj svoje priezvisko:"
+PRINTLN "Teraz zadaj svoje priezvisko:"
 INPUT
-PRINT "Teraz zadaj mesto, v ktorom bývaš:"
+PRINTLN "Teraz zadaj mesto, v ktorom bývaš:"
 INPUT
-PRINT "Teraz zadaj číslo svojej kreditnej/debetnej karty:"
+PRINTLN "Teraz zadaj číslo svojej kreditnej/debetnej karty:"
 INPUT
-PRINT "Teraz zadaj CVC kód:"
+PRINTLN "Teraz zadaj CVC kód:"
 INPUT
-PRINT "Teraz zadaj svoje hlavné heslo:"
+PRINTLN "Teraz zadaj svoje hlavné heslo:"
 INPUT
-PRINT "Teraz zadajte výšku vášho platu:"
+PRINTLN "Teraz zadajte výšku vášho platu:"
 INPUT
 
-PRINT "\nSpracúvam zadané údaje..."
+PRINTLN "\nSpracúvam zadané údaje..."
 SLEEP 5
-PRINT "Odosielam vláde čínskej ľudovej republiky..."
+PRINTLN "Odosielam vláde čínskej ľudovej republiky..."
 SLEEP 5
-PRINT "Odosielam žiadosť na zvýšenie sociálneho kreditu..."
+PRINTLN "Odosielam žiadosť na zvýšenie sociálneho kreditu..."
 SLEEP 5
 
-PRINT "\nĎakujeme za vyplnenie dotazníka! Podľa výsledkov ste najlepší kandidát na túto pracovnú ponuku! Gratulujeme! Očakávajte na svojom bankovom účte -1€ a atomovku pred barákom! :3\n- kim čink čonk ung"
+PRINTLN "\nĎakujeme za vyplnenie dotazníka! Podľa výsledkov ste najlepší kandidát na túto pracovnú ponuku! Gratulujeme! Očakávajte na svojom bankovom účte -1€ a atomovku pred barákom! :3\n- kim čink čonk ung"
