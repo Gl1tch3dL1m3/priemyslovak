@@ -22,4 +22,4 @@ SLEEP 5
 PRINTLN "Odosielam žiadosť na zvýšenie sociálneho kreditu..."
 SLEEP 5
 
-PRINTLN "\nĎakujeme za vyplnenie dotazníka! Podľa výsledkov ste najlepší kandidát na túto pracovnú ponuku! Gratulujeme! Očakávajte na svojom bankovom účte -1€ a atomovku pred barákom! :3\n- kim čink čonk ung"
+PRINTLN "\nĎakujeme za vyplnenie dotazníka! Podľa výsledkov ste najlepší kandidát na túto pracovnú ponuku! Gratulujeme! Očakávajte na svojom bankovom účte -1€ a atomovku pred barákom! :3"
