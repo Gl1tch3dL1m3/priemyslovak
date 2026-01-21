@@ -26,7 +26,7 @@ V jazyku PRIEMYSLOVAK sa využívajú tieto dátové typy:<br>
 - FLOAT
 - STRING
 - BOOL
-- NONETYPE
+- NONETYPE (NULL)
 - ARRAY
 
 ### Operácie
@@ -304,7 +304,7 @@ The following data types are used in PRIEMYSLOVAK:<br>
 - FLOAT
 - STRING
 - BOOL
-- NONETYPE
+- NONETYPE (NULL)
 - ARRAY
 
 ### Operations
