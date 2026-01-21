@@ -1,0 +1,143 @@
+PRINTLN "Vitajte v hre piškvorky!\nVyberte si režím hry:\n1 - Proti AI\n2 - Dvaja hráči"
+
+field = [" "," "," "," "," "," "," "," "," "]
+mode = TO_INT INPUT
+diff = NULL
+current_player = "X"
+is_running = TRUE
+
+IF (~(mode == 1 OR mode == 2)) THEN
+    PRINTLN "Neplatné číslo!"
+    TERMINATE
+END
+
+PRINTLN ""
+PRINTLN field[0] + "|" + field[1] + "|" + field[2]
+PRINTLN "—+—+—"
+PRINTLN field[3] + "|" + field[4] + "|" + field[5]
+PRINTLN "—+—+—"
+PRINTLN field[6] + "|" + field[7] + "|" + field[8]
+
+WHILE (is_running) DO
+    IF (mode == 2 OR current_player == "X") THEN
+        PRINTLN "\nZadajte index poľa (hráč: " + current_player + ") (1-9):"
+        i = TO_INT INPUT - 1
+
+        IF (i < 0 OR i > 8) THEN
+            PRINTLN "Neplatné číslo!"
+            CONTINUE
+        END
+
+        ELIF (field[i] ~= " ") THEN
+            PRINTLN "Tento index je už obsadený!"
+            CONTINUE
+        END
+
+        ELSE
+            field[i] = current_player
+
+            FOR i = 0 TO 2 DO
+                IF (field[i] == current_player AND field[i+3] == current_player AND field[i+6] == current_player) THEN
+                    PRINTLN "Hráč " + current_player + " vyhral!"
+                    is_running = FALSE
+                    BREAK
+                END
+            END
+
+            FOR i = 0 TO 6 STEP 3 DO
+                IF (field[i] == current_player AND field[i+1] == current_player AND field[i+2] == current_player) THEN
+                    PRINTLN "Hráč " + current_player + " vyhral!"
+                    is_running = FALSE
+                    BREAK
+                END
+            END
+
+            IF (is_running) THEN
+                IF ((field[0] == current_player AND field[4] == current_player AND field[8] == current_player) OR (field[2] == current_player AND field[4] == current_player AND field[6] == current_player)) THEN
+                    PRINTLN "Hráč " + current_player + " vyhral!"
+                    is_running = FALSE
+                END
+
+                FOR i = 0 TO 8 DO
+                    IF (field[i] == " ") THEN
+                        BREAK
+                    END
+
+                    ELIF (i == 8) THEN
+                        PRINTLN "Hracie pole je plné. Remíza!"
+                        is_running = FALSE
+                    END
+                END
+            END
+
+            IF (current_player == "X") THEN
+                current_player = "O"
+            END
+            
+            ELSE
+                current_player = "X"
+            END
+        END
+    END
+
+    ELIF (mode == 1) THEN
+        WHILE (TRUE) DO
+            i = TO_INT (RANDOM * 8)
+
+            IF (field[i] == " ") THEN
+                field[i] = current_player
+                BREAK
+            END           
+        END
+
+        IF (current_player == "X") THEN
+            current_player = "O"
+        END
+            
+        ELSE
+            current_player = "X"
+        END
+    
+        FOR i = 0 TO 2 DO
+            IF (field[i] == "O" AND field[i+3] == "O" AND field[i+6] == "O") THEN
+                PRINTLN "Hráč O vyhral!"
+                is_running = FALSE
+                BREAK
+            END
+        END
+
+        FOR i = 0 TO 6 STEP 3 DO
+            IF (field[i] == "O" AND field[i+1] == "O" AND field[i+2] == "O") THEN
+                PRINTLN "Hráč O vyhral!"
+                is_running = FALSE
+                BREAK
+            END
+        END
+
+        IF (is_running) THEN
+            IF ((field[0] == "O" AND field[4] == "O" AND field[8] == "O") OR (field[2] == "O" AND field[4] == "O" AND field[6] == "O")) THEN
+                PRINTLN "Hráč O vyhral!"
+                is_running = FALSE
+            END
+
+            IF (is_running) THEN
+                FOR i = 0 TO 8 DO
+                    IF (field[i] == " ") THEN
+                        BREAK
+                    END
+
+                    ELIF (i == 8) THEN
+                        TERMINATE
+                    END
+                END
+            END
+        END
+    END
+
+    PRINTLN ""
+    PRINTLN field[0] + "|" + field[1] + "|" + field[2]
+    PRINTLN "—+—+—"
+    PRINTLN field[3] + "|" + field[4] + "|" + field[5]
+    PRINTLN "—+—+—"
+    PRINTLN field[6] + "|" + field[7] + "|" + field[8]
+END
