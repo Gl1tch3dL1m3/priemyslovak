@@ -630,7 +630,10 @@ int interpreter(vector<Token> &tokens, int start_i, int end_i, bool is_subproces
             if (token.value.value == "PRINT" || token.value.value == "PRINTLN")
             {
                 if (next_token.value.t_type == TokenType::ARRAY)
+                {
                     print_array(next_token.value.value);
+                    if (token.value.value == "PRINTLN" || !is_script) cout << "\n";
+                }
 
                 else
                 {
