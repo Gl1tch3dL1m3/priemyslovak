@@ -19,8 +19,8 @@ using namespace std;
 
 const string _NAME_ = "PRIEMYSLOVAK";
 const string _AUTHOR_ = "glitchedlime";
-const string _VERSION_ = "1.0";
-const string _YEAR_ = "2025";
+const string _VERSION_ = "1.0.2";
+const string _YEAR_ = "2026";
 
 int ln = 0;
 bool is_script = false;
